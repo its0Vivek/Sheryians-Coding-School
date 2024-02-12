@@ -30,14 +30,19 @@ h1 {
     display: flex;
 }
 
-#parent {
+p {
+    display: block;
+    background-color: blue;
+}
+
+/* #parent {
     width: 300px;
     height: 300px;
     background-color: red;
-}
+} */
 
-#child {
+/* #child {
     width: 50vw;
     height: 50vh;
     background-color: gray;
-}
+} */
