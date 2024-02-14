@@ -6,4 +6,7 @@ unit = px % vw vh en rem
 fornt-famail 
 
 position 
- 
+  abosulute 
+
+
+  
