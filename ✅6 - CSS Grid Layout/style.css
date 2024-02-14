@@ -11,18 +11,34 @@ body {
     width: 100%;
 }
 
-#main {
+/* #main {
     height: 100%;
     width: 100%;
     background-color: rgb(0, 217, 255);
     display: grid;
-
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
 }
 
 
 .elem {
-    /* height: 200px;
-    width: 200px; */
+    height: 200px;
+    width: 200px;
     background-color: rgb(241, 47, 47);
     border: 3px solid black;
+} */
+
+#nav {
+    background-color: rgba(5, 5, 27, 0.603);
+    display: grid;
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+    align-items: center;
+    justify-items: center;
+    padding: 0 20px;
+}
+
+#nav h1 {
+    justify-self: start;
 }
