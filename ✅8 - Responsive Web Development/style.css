@@ -23,9 +23,16 @@ body {
     background-color: aqua;
 }
 
-/* vw = view poirt  */
-/* vh = view poirt */
+/* vw = view poirt width */
+/* vh = view poirt height*/
 
 h1 {
     font-size: 5vmax;
+}
+
+
+@media (max-width:600px) {
+    #child {
+        opacity: 0;
+    }
 }
