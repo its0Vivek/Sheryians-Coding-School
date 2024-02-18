@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#box1 {
+    height: 15vw;
+    width: 15vw;
+    background-color: orange;
+    position: relative;
+    animation-name: box-anime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+#box2 {
+    height: 15vw;
+    width: 15vw;
+    background-color: rgb(41, 158, 90);
+    position: relative;
+    animation-name: box-anime;
+    animation-duration: 1s;
+    animation-delay: .1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes box-anime {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 75%;
+    }
+}
+
+
+h1 {
+    font-size: 10vw 20vw;
+    color: aqua;
+}
+
+h1::before {
+    content: "And duniya ";
+}
+
+
+body {
+    background-color: black;
+    padding: 3vw;
+}
+
+button {
+    padding: 1vw 3vw;
+    background-color: transparent;
+    font-weight: 500;
+    border: 1px solid aqua;
+    color: aqua;
+    transform: all liner 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+button::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all linear 0.5s;
+    z-index: -1;
+}
+
+button:hover::after {
+    transform: translate(-50%, -50%) scale(2);
+}
+
+button:hover {
+    color: black;
+
+
+}
