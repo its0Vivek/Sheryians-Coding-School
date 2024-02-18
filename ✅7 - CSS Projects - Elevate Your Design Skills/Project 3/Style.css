@@ -55,6 +55,10 @@ body {
     font-weight: 650;
 }
 
+#nav-part2 h5 {
+    display: none;
+}
+
 #nav-part2 h4 span {
     font-size: 0.7vw;
     color: #5a5a5a;
@@ -139,4 +143,124 @@ body {
     width: 100%;
     object-fit: cover;
     flex-shrink: 0;
+}
+
+
+@media (max-width:600px) {
+    #nav {
+        height: 12vw;
+        width: 100%;
+    }
+
+    .color {
+        height: 3.5vw;
+        width: 3.5vw;
+    }
+
+
+    #nav-part2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #nav-part2 h4 {
+        margin: 0.5vw;
+        font-size: .9vw;
+        font-weight: 650;
+        display: none;
+    }
+
+    #nav-part2 h4:nth-child(1) {
+        display: initial;
+        font-size: 3.5vw;
+        font-weight: 650;
+        margin-right: 6vw;
+    }
+
+    #nav-part2 h5 {
+        display: initial;
+        font-size: 5vw;
+        font-weight: 700;
+    }
+
+    #nav-part2 h4 span {
+        font-size: 2.2vw;
+        color: #5a5a5a;
+        margin-left: 1vw;
+    }
+
+
+    #nav2 {
+        height: 10vw;
+        width: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        gap: 4vw;
+        padding: .31vw 4vw;
+        align-items: center;
+        padding-left: 2vw;
+    }
+
+    #nav2 h3 {
+        font-size: 2.2vw;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    #center {
+        height: 87%;
+        width: 100%;
+        /* background-color: rgb(42, 199, 165); */
+    }
+
+    #text-content {
+        height: 40%;
+        width: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        overflow: auto;
+    }
+
+    #text-content::-webkit-scrollbar {
+        background-color: transparent;
+        height: 1vw;
+        width: 1vw;
+    }
+
+    .elem {
+        width: 100%;
+    }
+
+    .elem h1 {
+        font-size: 16vw;
+        font-weight: 300;
+        font-family: "Inter", sans-serif;
+    }
+
+    image-contain {
+        height: 100%;
+        width: 100%;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        overflow: auto;
+    }
+
+    #image-contain::-webkit-scrollbar {
+        height: .2vw;
+        display: none;
+    }
+
+
+    #image-contain img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+
+
+
+
 }
