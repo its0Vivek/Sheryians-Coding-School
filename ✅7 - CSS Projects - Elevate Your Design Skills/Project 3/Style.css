@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: cursive;
+
 }
 
 html,
@@ -80,22 +81,62 @@ body {
 #center {
     height: calc(100% - 8vw);
     width: 100%;
-    background-color: rgb(42, 199, 165);
+    /* background-color: rgb(42, 199, 165); */
 }
 
 #text-content {
-    height: 50%;
+    height: 40%;
     width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     overflow: auto;
 }
 
+#text-content::-webkit-scrollbar {
+    background-color: transparent;
+    height: .35vw;
+    width: 1vw;
+}
+
+
+#text-content::-webkit-scrollbar-thumb {
+    background-color: orangered;
+}
+
+
 .elem {
     flex-shrink: 0;
     height: 100%;
-    width: 50%;
-    background-color: grey;
+    width: 60%;
+    /* background-color: grey; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem h1 {
+    font-size: 6vw;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+}
+
+#image-contain {
+    height: 60%;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    overflow: auto;
+}
+
+#image-contain::-webkit-scrollbar {
+    height: .2vw;
+    display: none;
+}
 
 
+#image-contain img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
