@@ -9,6 +9,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #F8F8F8;
 }
 
 #main {
@@ -148,6 +149,73 @@ body {
 }
 
 #overbottom img {
-    margin-top: 1vw;
+    width: 1vw;
     height: 2vw;
+}
+
+#scroll {
+    height: 40vh;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    /* padding: 1vw; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    /* background-color: yellow; */
+    display: inline-block;
+    padding: 2vw 1vw;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: .5vw;
+
+}
+
+#scroll img {
+    /* display: none; */
+    height: 90%;
+    border-radius: 50%;
+    width: 15%;
+    margin: 1vw;
+    object-fit: cover;
+    object-position: 30% 30%;
+}
+
+#scroll::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes scroll {
+    form {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet {
+    height: 10vw;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+
+
+#page2 {
+    height: 100%;
+    width: 100%;
+
 }
