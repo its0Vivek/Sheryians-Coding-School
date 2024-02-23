@@ -719,18 +719,20 @@ body {
 #footer {
     height: 100%;
     width: 100%;
-    background-color: yellow;
-    margin: 5vw 4vw;
+    /* background-color: yellow; */
+    margin: 5vw 0vw;
     display: flex;
     position: relative;
     justify-content: space-between;
-    padding: 0vw 4vw;
+    /* padding: 0vw 4vw; */
+    flex-direction: column;
 }
 
 #footer1 {
+    margin: 1vw 4vw;
     width: 100%;
-    height: 50%;
-    background-color: rebeccapurple;
+    height: 55%;
+    /* background-color: rebeccapurple; */
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -741,7 +743,7 @@ body {
 #footer1>h1 {
     width: 15%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
     text-transform: uppercase;
     font-size: 3vw;
     font-weight: 900;
@@ -749,25 +751,193 @@ body {
 
 #footerbox1 {
     width: 40%;
-    height: 100%;
-    background-color: red;
+    /* height: 100%; */
+    /* background-color: red; */
     display: flex;
     position: relative;
     justify-content: space-between;
     flex-direction: column;
+    margin-right: 1.5vw;
 }
 
 #footerbox1 h4 {
-    background-color: gray;
-    font-size: 1vw;
+    height: 10vw;
+    /* background-color: gray; */
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+#footerbox1 h4::before {
+    content: "B";
+    font-size: 1.1vw;
+    padding: 3.5px 10px;
+    /* background-color: red; */
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-right: 1vw;
+}
+
+#footerbox1 img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
 }
 
 #footerbox2 {
     width: 40%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     position: relative;
     justify-content: space-between;
     flex-direction: column;
+    margin-right: 4vw;
+    margin-left: 1.5vw;
+}
+
+#footerbox2 img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#footerbox2 h4 {
+    height: 10vw;
+    /* background-color: gray; */
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+#footerbox2 h4::before {
+    content: "B";
+    font-size: 1.1vw;
+    padding: 3.5px 10px;
+    /* background-color: red; */
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-right: 1vw;
+}
+
+
+#footer2 {
+    width: 100%;
+    height: 45%;
+    /* background-color: rebeccapurple; */
+    margin-top: 5vw;
+
+}
+
+
+#footer-nav {
+    height: 13vw;
+    width: 100%;
+    /* background-color: rgb(205, 182, 228); */
+    margin-top: 2vw;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 5vw;
+    /* align-items: center; */
+}
+
+#footer-nav h1 {
+    /* background-color: yellow; */
+    height: 100%;
+    width: 18%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: 2.5vw;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 8vw;
+    letter-spacing: -3px;
+    position: relative;
+    margin-right: 12vw;
+}
+
+#footer-nav h1::after {
+    content: "Model managenment";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #666;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 19%;
+    right: 2%;
+}
+
+
+#footer-nav h1::before {
+    content: "©";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 4%;
+    right: -4%;
+}
+
+#footer-nav h2 {
+    /* background-color: yellow; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border-right: 3px solid black;
+    font-size: 1.2vw;
+    font-weight: 700;
+    padding-top: 1.5vw;
+}
+
+#footer-nav h2:nth-last-child(1) {
+    margin-right: 2vw;
+}
+
+#footerbox {
+    width: 43%;
+    /* background-color: yellow; */
+    /* border-top: 3px solid black; */
+    /* border-bottom: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-nav h3 {
+    height: 38%;
+    width: 100%;
+    /* background-color: gray; */
+    font-size: 1.2vw;
+    font-weight: 700;
+    padding-top: 1.5vw;
+    padding-left: 2vw;
+    border-bottom: 3px solid black;
+}
+
+#footerlast {
+    display: flex;
+    /* background-color: yellow; */
+    flex-direction: column;
+}
+
+#icon {
+    margin: 1vw;
+}
+
+#icon>i {
+    padding: .5vw;
+    font-size: 1.2vw;
+}
+
+#footerlast>h4 {
+    font-size: 1vw;
+    padding-left: 1vw;
+
+    /* background-color: hotpink; */
 }
