@@ -45,9 +45,31 @@ body {
     font-style: normal;
     padding-left: 8vw;
     letter-spacing: -3px;
+    position: relative;
+}
+
+#nav h1::after {
+    content: "Model managenment";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #666;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 19%;
+    right: 2%;
 }
 
 
+#nav h1::before {
+    content: "©";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 19%;
+    right: -2%;
+}
 
 #nav h2 {
     /* background-color: yellow; */
@@ -591,6 +613,7 @@ body {
 }
 
 #page8 {
+    margin-bottom: 5vw;
     height: 100%;
     width: 100%;
     /* background-color: rebeccapurple; */
@@ -648,29 +671,103 @@ body {
     width: 80%;
     padding-top: 2vw;
     padding-right: 2vw;
+    margin-bottom: 5vw;
 }
 
 #marque {
     /* height: 20vh; */
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: .5vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 #marque h1 {
     display: inline-block;
     /* width: 100%; */
-    font-size: 3vw;
+    font-size: 2.7vw;
     text-transform: uppercase;
+    letter-spacing: 3px;
     font-weight: 900;
     -webkit-text-stroke: 2px black;
     color: transparent;
     font-family: "Russo One", sans-serif;
+    /* background-color: blue; */
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 
 }
 
+@keyframes move {
+    form {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
 
 
 #footer {
     height: 100%;
     width: 100%;
+    background-color: yellow;
+    margin: 5vw 4vw;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 0vw 4vw;
+}
+
+#footer1 {
+    width: 100%;
+    height: 50%;
+    background-color: rebeccapurple;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+
+#footer1>h1 {
+    width: 15%;
+    height: 100%;
+    background-color: red;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+#footerbox1 {
+    width: 40%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#footerbox1 h4 {
+    background-color: gray;
+    font-size: 1vw;
+}
+
+#footerbox2 {
+    width: 40%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
 }
