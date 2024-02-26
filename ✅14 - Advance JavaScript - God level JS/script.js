@@ -106,5 +106,58 @@ let fnc = counter();
 
 fnc();
 
-// evebt dekegatoin
+// event delegation
+
+let parent = document.querySelector("#parent")
+
+parent.addEventListener("click", function (details) {
+    if (details.target.id === "play") {
+        console.log("play song");
+    }
+    else if (details.target.id === "pause") {
+        console.log("pause song");
+    }
+})
+
+
+//higher order functions  (hofs)
+// hofs is 
+function niku(parameter) {
+
+}
+
+niku(function () { });
+
+
+let djs = [1, 2, 3, 4, 5, 6, 7]
+
+djs.forEach(function () { })
+
+//try - catch
+
+function divide(a, b) {
+    try {
+        if (b == 0) {
+            throw Error("Error is there");
+        }
+        console.log(a / b);
+    }
+    catch (err) {
+        console.error(err);
+    }
+}
+divide(12, 0)
+
+//Costom events
+//evebts = click , dblclick, mouseover , input
+
+const urevent = new Event("go home")
+
+document.querySelector("button")
+    .addEventListener("go home", function () {
+        console.warn("coming home")
+    })
+
+document.querySelector("button").dispatchEvent(urevent)
+
 
