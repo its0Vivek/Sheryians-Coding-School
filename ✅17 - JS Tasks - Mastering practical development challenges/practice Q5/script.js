@@ -1,7 +1,20 @@
+let h3 = document.querySelector('h3');
 let btn = document.querySelector('button');
-let p = document.querySelector('p');
+let stop = document.querySelector('#Stop');
+
+let int;
+
+btn.addEventListener("click", function() {
+    let count = 0;
+    int = setInterval(function(){
+        h3.textContent = count;
+        console.log(count);
+        count++
+    }, 1000)
 
 
-btn.addEventListener('click', function() {
-    p.textContent = 'lorem23';
+})
+
+stop.addEventListener("click", function() {
+    clearInterval(int)
 })

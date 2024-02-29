@@ -1,10 +1,17 @@
 let form = document.querySelector('form');
-let inp1 = document.querySelector('#inp1');
-let inp2 = document.querySelector('#inp2');
+let inps = document.querySelectorAll('input[type="text"]');
+let h4 = document.querySelector('h4')
 
 
 form.addEventListener('submit', function(ev) {
     ev.preventDefault();
-        console.log(inp1.value);
+    for(let i = 0; i<inps.length; i++){
+        if(inps[i].value.trim() === ''){
+            h4.textContent = 'Error, some field are black'
+            break;
+        }else{
+            h4.textContent = ''
+        }
+    }
     
 })
