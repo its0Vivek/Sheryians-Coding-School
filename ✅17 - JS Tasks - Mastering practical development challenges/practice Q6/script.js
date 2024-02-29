@@ -1,7 +1,7 @@
-let btn = document.querySelector('button');
-let p = document.querySelector('p');
+let home =document.querySelector('#home')
+let about =document.querySelector('#about')
+let contact =document.querySelector('#contact')
 
-
-btn.addEventListener('click', function() {
-    p.textContent = 'lorem23';
-})
+let hometext =document.querySelector('#home')
+let abouttext =document.querySelector('#home')
+let contacttext =document.querySelector('#home')
