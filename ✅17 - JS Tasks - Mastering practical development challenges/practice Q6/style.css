@@ -9,10 +9,18 @@ html, body{
     height: 100%;
 }
 
+#main{
+    width: 70%;
+    height: 100%;
+    margin: 0 15%;
+}
+
+
 #tabs{
     display: flex;
     gap: 20px;
     padding: 12px 22px;
+    height: 7%;
 }
  
 .tab{
@@ -21,6 +29,7 @@ html, body{
     background-color: #c7c4c4;
     border-radius: 5px;
     font-weight: 700;
+    gap: 2vw;
 } 
 
 h3{
@@ -28,4 +37,5 @@ h3{
     width: 60%;
     margin-left: 10px;
     display: none;
+    background-color: aquamarine;
 }
