@@ -1,7 +1,9 @@
-let btn = document.querySelector('button');
-let p = document.querySelector('p');
+window.onscroll = function() {scrollFunction()};
 
-
-btn.addEventListener('click', function() {
-    p.textContent = 'lorem23';
-})
+function scrollFunction() {
+  var scrollTop = document.documentElement.scrollTop;
+  var scrollHeight = document.documentElement.scrollHeight ;
+  var clientHeight = document.documentElement.clientHeight ;
+  var scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
+  document.getElementById("progress-bar").style.width = scrolled + "%";
+}
