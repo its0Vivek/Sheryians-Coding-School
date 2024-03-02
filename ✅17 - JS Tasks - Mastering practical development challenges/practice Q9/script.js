@@ -1,7 +1,9 @@
-let btn = document.querySelector('button');
-let p = document.querySelector('p');
+let textarea = document.querySelector('textarea')
+let count = document.querySelector('span')
+let num;
 
 
-btn.addEventListener('click', function() {
-    p.textContent = 'lorem23';
+textarea.addEventListener('input',function(){
+    num = textarea.value.length
+    count.textContent = num;
 })
